@@ -5,6 +5,17 @@
 /* Tablets & below */
 /* Default: 3 columns on large screens */
 
+@media (max-width:1024px){
+  .grid-container{
+    padding:2.5rem 0;
+  
+  }
+
+  .samples img{
+    width:230px;
+    height: 170px;
+  }
+}
 /* Tablet: 2 columns */
 @media (max-width: 992px) {
   .samples {
@@ -82,9 +93,10 @@
 .grid-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    width: 350px;
+    width: 80%;
     margin: auto;
     gap: 5px;
+    padding: 2rem 0;
 }
 
 /* Features Section */
@@ -110,10 +122,20 @@
   font-size: 2rem;
   margin-bottom: 1rem;
 }
-
-.sample{
-    width: 70%;
+.grid-container h3{
+  font-size: clamp(1rem, 4vw, 1.5rem);
+  padding: 1rem 0.5rem;
+  margin-bottom: 1.5rem;
 }
+.samples{
+  gap:1rem;
+}
+.img-content{
+  width:45%;
+  height: 160px;
+}
+
+
   /* Contact form full width */
   #contact-form {
     width: 90%;
@@ -212,6 +234,12 @@ body.dark-mode #main_footer { border-top: 3px solid #888; }
   #contact-form textarea {
     font-size: 0.9rem;
   }
-
+.grid-container{
+  padding: 1.5rem 0;
+}
+  .img-content{
+    width:90%;
+    height: 180px;
+  }
 }
 
