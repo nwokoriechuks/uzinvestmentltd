@@ -97,7 +97,7 @@ span{
   align-items: center;
 
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  height: 100vh;
+  height: 80vh;
 }
 
 .hero-content{
@@ -107,7 +107,7 @@ border-radius: 10px;
   width: 80%;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   color: white;
-  height: 80vh;
+  height: 70vh;
    margin: 0rem auto;
   padding: 40px;
   background: rgba(0, 0, 0, 1);
