@@ -19,7 +19,7 @@ span{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 0.5rem 2rem;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -88,13 +88,30 @@ span{
 }
 
 /* Hero */
+
 .hero {
-  background: url('https://images.unsplash.com/photo-1524758631624-e2822e304c36') center/cover no-repeat;
+      background: url('./image1.jpeg') center/cover no-repeat;
+      margin:0;
+      display: flex;
+    justify-content: center;
+  align-items: center;
+
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  height: 100vh;
+}
+
+.hero-content{
+border-radius: 10px;
+  overflow: hidden;
+  max-width:600px;
+  width: 80%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   color: white;
   height: 80vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+   margin: 0rem auto;
+  padding: 40px;
+  background: rgba(0, 0, 0, 1);
+  
   text-align: center;
 }
 .hero-content h1 {
@@ -115,7 +132,7 @@ span{
   transition: background 0.3s;
 }
 .btn:hover {
-  background: black;
+  background: grey;
 }
 
 /* Features Section */

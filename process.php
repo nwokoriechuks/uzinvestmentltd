@@ -1,8 +1,8 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Collect form fields safely
-    $name = htmlspecialchars(trim($_POST["name"]));
-    $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
+    $name    = htmlspecialchars(trim($_POST["name"]));
+    $email   = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
     $message = htmlspecialchars(trim($_POST["message"]));
 
     // Validate fields
@@ -11,13 +11,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit;
     }
 
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    if (! filter_var($email, FILTER_VALIDATE_EMAIL)) {
         echo "❌ Invalid email format.";
         exit;
     }
 
     // Recipient email (change to your email address)
-    $to = "uzinvestmentltd@gmail.com";
+    $to      = "nwokoriechuma@gmail.com";
     $subject = "📩 New Contact Form Message from $name";
 
     // Email body
@@ -39,4 +39,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 } else {
     echo "❌ Invalid request.";
 }
-?>

@@ -35,7 +35,7 @@
     position:absolute;
     top:60px;
     left:0;
-    padding:1rem;
+    padding:0.5rem;
     transition:max-height 0.4s ease-out;
   }
   #navbar ul li {
@@ -66,7 +66,7 @@
   margin:0px 0px 5px 0px
 }
   .hero {
-    height: 60vh;
+    height: 100vh;
     padding: 0 1rem;
   }
   .hero-content h1 {
@@ -194,11 +194,12 @@ body.dark-mode #main_footer { border-top: 3px solid #888; }
 
 /* Small phones */
 @media (max-width: 480px) {
+  
   .hero-content h1 {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
   .hero-content p {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
   }
   .btn {
     padding: 0.6rem 1.2rem;
